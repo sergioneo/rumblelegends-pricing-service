@@ -32,6 +32,9 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'dotenv-rails', :github => "bkeepers/dotenv"
+
+gem "typhoeus"
 
 gem 'rack-cors', :require => 'rack/cors'
 
