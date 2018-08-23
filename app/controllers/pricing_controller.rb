@@ -9,7 +9,7 @@ class PricingController < ApplicationController
 
   def beast
 
-  	req_url = ENV["CONTRACT_MASTER_SERVICE"]+"beast/get_price/"+param[:id]
+  	req_url = ENV["CONTRACT_MASTER_SERVICE"]+"beast/get_price/"+params[:id]
   	price_structure =  Typhoeus.get(req_url, followlocation: true).body
 
   	render json: price_structure
